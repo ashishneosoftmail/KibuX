@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9jOCjvdMiK2ddmi4/frVIEPiaU6kG9W5G8uPtrhmJ7ACzM5fWTGL9j1sT9IT3UXNEItPWrNugEIRgl2rKlWXBg==",
+  "success": true,
+  "projectFilePath": "E:\\KibuX\\Kibu\\Kibu.iOS\\Kibu.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nk805\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
