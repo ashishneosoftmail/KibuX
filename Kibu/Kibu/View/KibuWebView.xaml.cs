@@ -26,6 +26,21 @@ namespace Kibu.View
             else
                 DisplayAlert("Kibu", "Check your internet connection", "OK");
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Connectivity.ConnectivityChanged += Connectivity_ConnectivityChanged;
+        }
+
+        private void Connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            {
+                kibuWeb.Source = WebUrl.baseUrl;
+                kibuWeb.Navigated += KibuWeb_Navigated;
+                kibuWeb.Navigating += KibuWeb_Navigating;
+            }
+        }
 
         private void KibuWeb_Navigating(object sender, WebNavigatingEventArgs e)
         {
